@@ -5,6 +5,30 @@
 <meta name="viewport" content="width=device-width, initial-scale=1.0" />
 <title>FCEのAI研修 | "使える"だけで終わらせない、AI活用人材の育成プログラム</title>
 <meta name="description" content="AIを"使える"人ではなく、業務に"組み込み・広げられる"人を育てる。FCEの実践型AI研修プログラム（AIスキル研修／伴走型研修／推進者養成研修）。" />
+<link rel="canonical" href="https://aitraining.fce-aiomniagent.com/" />
+<link rel="icon" type="image/png" href="favicon.png" />
+<link rel="apple-touch-icon" href="favicon.png" />
+<meta property="og:type" content="website" />
+<meta property="og:site_name" content="FCEのAI研修" />
+<meta property="og:locale" content="ja_JP" />
+<meta property="og:title" content="FCEのAI研修 | “使える”だけで終わらせない、AI活用人材の育成プログラム" />
+<meta property="og:description" content="AIをただ“使える”人ではなく、業務に組み込み・広げられる人を育てる。FCEの実践型AI研修プログラム。" />
+<meta property="og:url" content="https://aitraining.fce-aiomniagent.com/" />
+<meta property="og:image" content="https://aitraining.fce-aiomniagent.com/hero-bg.png" />
+<meta name="twitter:card" content="summary_large_image" />
+<meta name="twitter:title" content="FCEのAI研修" />
+<meta name="twitter:description" content="AIを“使える”だけで終わらせない、実践型AI研修プログラム。" />
+<meta name="twitter:image" content="https://aitraining.fce-aiomniagent.com/hero-bg.png" />
+<script type="application/ld+json">
+{"@context":"https://schema.org","@type":"Organization","name":"株式会社FCE","alternateName":"FCEのAI研修","url":"https://aitraining.fce-aiomniagent.com/","logo":"https://aitraining.fce-aiomniagent.com/fce-logo.png"}
+</script>
+<script type="application/ld+json">
+{"@context":"https://schema.org","@graph":[
+{"@type":"Course","name":"AIスキル研修","description":"AIの種類・リスク・活用法をハンズオン形式で体系的に習得し、AIエージェントを自分で作れる状態を目指す実践研修。","provider":{"@type":"Organization","name":"株式会社FCE","url":"https://aitraining.fce-aiomniagent.com/"},"url":"https://aitraining.fce-aiomniagent.com/#d01","hasCourseInstance":{"@type":"CourseInstance","courseMode":"onsite","courseWorkload":"PT15H"}},
+{"@type":"Course","name":"伴走型研修","description":"業務洗い出しワークを通じて、自社で活用できるAIエージェントを制作する伴走型研修。コンサルタントが現場の課題解決に伴走します。","provider":{"@type":"Organization","name":"株式会社FCE","url":"https://aitraining.fce-aiomniagent.com/"},"url":"https://aitraining.fce-aiomniagent.com/#d02","hasCourseInstance":{"@type":"CourseInstance","courseMode":"blended","courseWorkload":"PT16H"}},
+{"@type":"Course","name":"推進者養成研修","description":"リテラシー研修や伴走研修を自社で実施できる推進者（ファシリテーター）を養成し、社内へAI活用を展開する研修。","provider":{"@type":"Organization","name":"株式会社FCE","url":"https://aitraining.fce-aiomniagent.com/"},"url":"https://aitraining.fce-aiomniagent.com/#d03","hasCourseInstance":{"@type":"CourseInstance","courseMode":"blended","courseWorkload":"PT16H"}}
+]}
+</script>
 <link rel="preconnect" href="https://fonts.googleapis.com">
 <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
 <link href="https://fonts.googleapis.com/css2?family=Zen+Kaku+Gothic+New:wght@500;700;900&family=Noto+Sans+JP:wght@400;500;700&family=Outfit:wght@500;600;700;800&display=swap" rel="stylesheet">
@@ -44,6 +68,7 @@
   .num{font-family:"Outfit",sans-serif;font-variant-numeric:tabular-nums;letter-spacing:.02em}
   a{color:inherit;text-decoration:none}
   img{max-width:100%;display:block}
+  .nb{white-space:nowrap}
   .wrap{max-width:var(--maxw);margin:0 auto;padding:0 24px}
   .eyebrow{
     display:inline-flex;align-items:center;gap:8px;
@@ -241,12 +266,23 @@
   table.cmp tbody tr:hover td{background:#fafbff}
 
   /* ---------- FLOW ---------- */
-  .flow{display:grid;grid-template-columns:repeat(4,1fr);gap:18px;counter-reset:fl}
-  .flowcard{background:#fff;border:1px solid var(--line);border-radius:var(--radius);padding:28px 24px;position:relative;box-shadow:var(--shadow-sm)}
-  .flowcard .fn{counter-increment:fl;font-family:"Outfit";font-weight:800;font-size:.8rem;color:#fff;background:var(--violet);width:34px;height:34px;border-radius:10px;display:grid;place-items:center;margin-bottom:14px}
-  .flowcard .fn::before{content:"0" counter(fl)}
-  .flowcard h4{font-size:1.08rem;font-weight:900;margin-bottom:8px}
-  .flowcard p{font-size:.88rem;color:var(--muted)}
+  .flow{display:grid;grid-template-columns:repeat(4,1fr);gap:22px;counter-reset:fl}
+  .flowcard{
+    --c:var(--violet);
+    background:#fff;border:1px solid var(--line);border-left:4px solid var(--c);
+    border-radius:0 16px 16px 0;padding:26px 26px 28px;position:relative;
+    box-shadow:var(--shadow-sm);transition:transform .3s,box-shadow .3s,border-left-width .2s;
+  }
+  .flowcard:nth-child(1){--c:#1f7fc4}
+  .flowcard:nth-child(2){--c:#6c5ce7}
+  .flowcard:nth-child(3){--c:#f6921e}
+  .flowcard:nth-child(4){--c:#e02a23}
+  .flowcard:hover{transform:translateY(-6px);box-shadow:var(--shadow);border-left-width:7px}
+  .flowcard .fn{counter-increment:fl;display:flex;align-items:center;gap:12px;margin-bottom:10px}
+  .flowcard .fn::before{content:"0" counter(fl);font-family:"Outfit";font-weight:800;font-size:2.15rem;line-height:1;color:var(--c)}
+  .flowcard .fn::after{content:"";flex:1;height:2px;border-radius:2px;background:linear-gradient(90deg,var(--c),transparent);opacity:.4}
+  .flowcard h4{font-size:1.14rem;font-weight:900;margin-bottom:8px}
+  .flowcard p{font-size:.9rem;color:var(--muted)}
 
   /* ---------- E-LEARNING BANNER ---------- */
   .elearn{padding:0 0 92px}
@@ -473,11 +509,10 @@
           <h4>研修内容</h4>
           <p>AIの種類・リスク・活用法をハンズオン形式で体系的に習得します。</p>
         </div>
-        <div class="specgrid">
+        <div class="specgrid" style="grid-template-columns:1fr">
           <div class="sp"><div class="k">研修時間</div><div class="v">5時間 × 3日間</div></div>
-          <div class="sp"><div class="k">料金</div><div class="v">40<small>万円 / 1名</small></div></div>
         </div>
-        <div class="grant"><span class="pct">最大75%OFF</span><span>助成金活用可。75%OFFが適用の場合は、実質<b>10万円/名</b>で受講いただけます。</span></div>
+        <div class="grant"><span>助成金を活用できる場合があります。詳しくは担当までお問い合わせください。</span></div>
       </div>
     </div>
   </div>
@@ -562,7 +597,7 @@
     <div class="elearn-inner rv">
       <div>
         <span class="tag">04 ｜ E-LEARNING</span>
-        <h2>まとまった研修時間が取りにくい方へ。<br>eラーニング講座</h2>
+        <h2><span class="nb">まとまった研修時間が</span><span class="nb">取りにくい方へ。</span><br>eラーニング講座</h2>
         <p>個々人のペースで、入門・実践・発展の3編を体系的に。全員が学べる環境を、いつでも・どこでも。</p>
         <div class="price-tag"><b>135,000円</b><span>（税別 / 1名）　全3編＝計30時間</span></div>
       </div>
@@ -582,7 +617,7 @@
     </div>
     <div class="faq-list">
       <details class="faq rv"><summary><span class="q"><b>Q</b>AIの知識がまったくない社員でも受講できますか？</span><span class="plus"></span></summary><div class="a">ご受講可能です。AIスキル研修は生成AI活用に関して、基礎から体系的に学べる内容ですので、前提知識なしでもご参加いただけます。</div></details>
-      <details class="faq rv"><summary><span class="q"><b>Q</b>助成金はどの研修で使えますか？</span><span class="plus"></span></summary><div class="a">条件を満たす場合に、AIスキル研修で助成金を活用いただけます。詳細はお問い合わせ時にご案内します。</div></details>
+      <details class="faq rv"><summary><span class="q"><b>Q</b>助成金はどの研修で使えますか？</span><span class="plus"></span></summary><div class="a">条件を満たすと、01 AIスキル研修で助成金を活用いただける場合があります。詳細はお問い合わせ時にご案内します。</div></details>
       <details class="faq rv"><summary><span class="q"><b>Q</b>複数の研修を組み合わせられますか？</span><span class="plus"></span></summary><div class="a">はい。「使う→組み込む→広げる」のステップに沿って組み合わせるのがおすすめです。最適な構成をご提案します。</div></details>
       <details class="faq rv"><summary><span class="q"><b>Q</b>eラーニングと集合研修はどちらを選ぶべきですか？</span><span class="plus"></span></summary><div class="a">実務への落とし込みや内製化までを目指す場合は集合・伴走型研修をご検討ください。併用も可能です。</div></details>
     </div>
