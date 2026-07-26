@@ -21,115 +21,132 @@
 <meta name="twitter:image" content="https://aitraining.fce-aiomniagent.com/hero-bg.png" />
 <link rel="preconnect" href="https://fonts.googleapis.com">
 <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
-<link href="https://fonts.googleapis.com/css2?family=Zen+Kaku+Gothic+New:wght@500;700;900&family=Noto+Sans+JP:wght@400;500;700&family=Outfit:wght@500;600;700;800&display=swap" rel="stylesheet">
+<link href="https://fonts.googleapis.com/css2?family=Zen+Old+Mincho:wght@700;900&family=Noto+Sans+JP:wght@400;500;700;900&family=Oswald:wght@400;500;600&display=swap" rel="stylesheet">
 <style>
   :root{
-    --navy:#15224b;--navy-2:#1d2e63;--red:#e02a23;--orange:#f6921e;--blue:#1f7fc4;
-    --violet:#6c5ce7;--violet-2:#8b7bf0;--violet-soft:#ece9fd;
-    --ink:#1a2238;--muted:#5b6480;--line:#e3e7f0;
-    --bg:#ffffff;--bg-soft:#f5f7fc;--bg-lav:#f3f1fe;
-    --radius:18px;--shadow-sm:0 4px 18px rgba(21,34,75,.06);--shadow:0 18px 50px rgba(21,34,75,.12);
-    --maxw:1160px;
-    --grad-ai:linear-gradient(120deg,#1d2e63 0%,#4b41b8 48%,#1f7fc4 100%);
+    --navy:#15224b;--navy-2:#1d2e63;
+    --grad-navy:linear-gradient(115deg,#0b1433 0%,#15224b 46%,#26437c 100%);--red:#e02a23;--orange:#f6921e;--blue:#1f7fc4;--violet:#6c5ce7;
+    --ink:#1a2238;--muted:#5b6480;--line:#e3e7f0;--line-dk:rgba(255,255,255,.18);
+    --bg:#ffffff;--bg-soft:#f5f7fc;--maxw:1200px;
   }
   *{box-sizing:border-box;margin:0;padding:0}
   html{scroll-behavior:smooth}
-  body{font-family:"Noto Sans JP",sans-serif;color:var(--ink);background:var(--bg);line-height:1.8;-webkit-font-smoothing:antialiased;overflow-x:hidden}
-  h1,h2,h3,.disp{font-family:"Zen Kaku Gothic New",sans-serif;line-height:1.35;letter-spacing:.01em}
+  body{font-family:"Noto Sans JP",sans-serif;color:var(--ink);background:var(--bg);line-height:2;-webkit-font-smoothing:antialiased;overflow-x:hidden;font-size:15px}
+  h1,h2,h3{font-family:"Zen Old Mincho",serif;line-height:1.5;letter-spacing:.03em;font-weight:900}
   a{color:inherit;text-decoration:none}
   img{max-width:100%;display:block}
-  .wrap{max-width:var(--maxw);margin:0 auto;padding:0 24px}
-  .btn{display:inline-flex;align-items:center;justify-content:center;gap:10px;font-weight:700;font-size:1rem;border-radius:999px;padding:15px 30px;cursor:pointer;border:none;transition:.25s ease;white-space:nowrap;font-family:"Zen Kaku Gothic New",sans-serif}
-  .btn-primary{background:var(--red);color:#fff;box-shadow:0 10px 26px rgba(224,42,35,.32)}
-  .btn-primary:hover{transform:translateY(-2px);box-shadow:0 16px 34px rgba(224,42,35,.4)}
-  .btn-ghost{background:rgba(255,255,255,.12);color:#fff;border:1.5px solid rgba(255,255,255,.5)}
-  .btn-ghost:hover{background:rgba(255,255,255,.22)}
-  .btn-outline{background:#fff;color:var(--navy);border:1.5px solid var(--line);box-shadow:var(--shadow-sm)}
-  .btn-outline:hover{border-color:var(--violet);color:var(--violet)}
+  .wrap{max-width:var(--maxw);margin:0 auto;padding:0 28px}
+
+  .btn{
+    display:inline-flex;align-items:center;justify-content:space-between;gap:18px;
+    font-weight:700;font-size:.95rem;padding:9px 9px 9px 30px;min-width:280px;
+    cursor:pointer;border:1px solid transparent;border-radius:999px;
+    transition:background .25s,color .25s,border-color .25s;
+    white-space:nowrap;letter-spacing:.06em;
+  }
+  .btn::after{
+    content:"→";width:42px;height:42px;border-radius:50%;flex:none;
+    display:grid;place-items:center;font-family:"Oswald",sans-serif;font-size:1.05rem;
+    transition:transform .25s;
+  }
+  .btn:hover::after{transform:translateX(5px)}
+  .btn-primary{background:var(--red);color:#fff}
+  .btn-primary::after{background:#fff;color:var(--red)}
+  .btn-primary:hover{background:#c31f19}
 
   /* HEADER */
-  header{position:sticky;top:0;z-index:100;background:rgba(255,255,255,.86);backdrop-filter:blur(14px);border-bottom:1px solid var(--line)}
-  .nav{display:flex;align-items:center;justify-content:space-between;height:72px}
-  .logo{display:flex;align-items:center;gap:12px;font-weight:900;font-family:"Outfit",sans-serif}
-  .logo .logo-img{height:42px;width:auto}
-  .logo b{font-size:1.32rem;color:var(--navy);letter-spacing:.04em}
-  .logo span{font-size:.66rem;color:var(--muted);font-weight:600;letter-spacing:.06em;display:block;margin-top:-4px;white-space:nowrap}
-  .nav-links{display:flex;align-items:center;gap:28px}
-  .nav-links a.lnk{font-weight:700;font-size:.92rem;color:var(--ink);transition:.2s}
-  .nav-links a.lnk:hover{color:var(--violet)}
-  .nav-links a.back{display:inline-flex;align-items:center;gap:6px;color:var(--violet);font-weight:700;font-size:.9rem}
-  .nav-cta{padding:11px 22px;font-size:.9rem}
+  header{position:sticky;top:0;z-index:100;background:#fff;border-bottom:1px solid var(--line)}
+  header .wrap{max-width:none;padding:0 32px}
+  .nav{display:flex;align-items:center;height:78px}
+  .nav .nav-links{margin-left:auto}
+  .nav .badges{display:flex;align-items:center;gap:12px;margin-left:20px;padding-left:20px;border-left:1px solid var(--line)}
+  .nav .badges img{height:46px;width:auto;display:block}
+  .logo{display:flex;align-items:center;gap:12px}
+  .logo .logo-img{height:40px;width:auto}
+  .logo b{font-family:"Zen Old Mincho",serif;font-size:1.24rem;color:var(--navy);letter-spacing:.08em;font-weight:900}
+  .nav-links{display:flex;align-items:center;gap:32px}
+  .nav-links a.lnk{font-weight:500;font-size:.88rem;color:var(--ink);padding:4px 0;position:relative}
+  .nav-links a.lnk::after{content:"";position:absolute;left:0;bottom:-2px;width:0;height:1px;background:var(--ink);transition:width .25s}
+  .nav-links a.lnk:hover::after{width:100%}
+  .nav-cta{min-width:0;padding:5px 5px 5px 22px;font-size:.84rem}
+  .nav-cta::after{width:34px;height:34px;font-size:.95rem}
   .burger{display:none;flex-direction:column;gap:5px;background:none;border:none;cursor:pointer;padding:8px}
-  .burger span{width:24px;height:2.5px;background:var(--navy);border-radius:2px;transition:.3s}
+  .burger span{width:24px;height:2px;background:var(--navy);transition:.3s}
 
-  /* breadcrumb back bar */
-  .backbar{background:var(--bg-lav);border-bottom:1px solid var(--line)}
-  .backbar .wrap{display:flex;align-items:center;gap:10px;height:46px;font-size:.85rem;color:var(--muted)}
-  .backbar a{color:var(--violet);font-weight:700}
-  .backbar a:hover{text-decoration:underline}
+  /* back bar */
+  .backbar{background:var(--bg-soft);border-bottom:1px solid var(--line)}
+  .backbar .wrap{display:flex;align-items:center;gap:12px;height:46px;font-size:.8rem;color:var(--muted)}
+  .backbar a{color:var(--navy);font-weight:700;border-bottom:1px solid var(--navy)}
+  .backbar a:hover{color:var(--red);border-color:var(--red)}
 
-  /* HERO */
-  .hero{
-    position:relative;color:#fff;overflow:hidden;padding:64px 0 72px;
-    background:linear-gradient(100deg,rgba(16,26,60,.94) 0%,rgba(24,38,88,.88) 42%,rgba(30,72,150,.64) 80%,rgba(31,127,196,.46) 100%),url('hero-bg.png');
-    background-size:cover;background-position:center;
-  }
-  .hero::before{
-    content:"";position:absolute;inset:0;
-    background:radial-gradient(620px 420px at 82% 8%,rgba(139,123,240,.4),transparent 70%),radial-gradient(520px 380px at 12% 95%,rgba(31,127,196,.35),transparent 70%);
-  }
-  .hero .wrap{position:relative;z-index:2}
-  .hero h1{font-size:clamp(1.9rem,4.4vw,2.9rem);font-weight:900}
-  .hero p.lead{font-size:clamp(1rem,1.6vw,1.14rem);margin-top:18px;max-width:640px;color:rgba(255,255,255,.92);font-weight:500}
+  /* HERO (dark band) */
+  .hero{background:var(--grad-navy);color:#fff;position:relative;overflow:hidden}
+  .hero .wrap{padding-top:90px;padding-bottom:90px;position:relative;z-index:2}
+  .hero-kicker{font-family:"Oswald",sans-serif;font-size:.8rem;letter-spacing:.34em;color:rgba(255,255,255,.55);margin-bottom:30px;font-weight:400;animation:rise .8s .1s cubic-bezier(.2,.7,.2,1) both}
+  .hero h1{font-family:"Noto Sans JP",sans-serif;font-weight:900;font-size:clamp(1.7rem,3.2vw,2.6rem);color:#fff;letter-spacing:.05em;animation:rise .9s .25s cubic-bezier(.2,.7,.2,1) both}
+  .hero p.lead{font-size:clamp(.95rem,1.4vw,1.05rem);margin-top:26px;max-width:640px;color:rgba(255,255,255,.82);line-height:2.2;animation:rise .8s .45s cubic-bezier(.2,.7,.2,1) both}
+  @keyframes rise{from{opacity:0;transform:translateY(26px)}to{opacity:1;transform:none}}
+  .hero .en-bg{position:absolute;right:-20px;bottom:-40px;font-family:"Oswald",sans-serif;font-weight:600;font-size:clamp(6rem,14vw,11rem);line-height:1;color:transparent;-webkit-text-stroke:1px rgba(255,255,255,.08);user-select:none;pointer-events:none}
 
   /* SECTION */
-  section.block{padding:72px 0}
-  .sec-head{text-align:center;max-width:760px;margin:0 auto 40px}
-  .sec-head h2{font-size:clamp(1.5rem,3.2vw,2.1rem);font-weight:900}
-  .sec-head p{color:var(--muted);margin-top:14px;font-size:1rem}
+  section.blk{padding:110px 0}
+  .sec-en{display:block;font-family:"Oswald",sans-serif;font-weight:600;line-height:.9;font-size:clamp(3rem,7vw,5rem);letter-spacing:.04em;color:transparent;-webkit-text-stroke:1px #d4dae6;margin-bottom:26px;user-select:none}
+  .sec-ttl{font-size:clamp(1.5rem,3vw,2rem);color:var(--navy)}
+  .sec-lead{color:var(--muted);margin-top:20px;font-size:.96rem;max-width:680px}
 
-  /* lead points */
-  .points{display:flex;gap:14px;justify-content:center;flex-wrap:wrap;margin:0 auto 8px;max-width:860px}
-  .points .pt{display:inline-flex;align-items:center;gap:9px;background:var(--bg-lav);border:1px solid var(--line);border-radius:999px;padding:9px 18px;font-size:.9rem;font-weight:700;color:var(--navy)}
-  .points .pt svg{flex:none;color:var(--violet)}
+  /* points */
+  .points{margin:56px 0 48px;border-top:1px solid var(--ink)}
+  .points .pt{
+    display:grid;grid-template-columns:70px 1fr;gap:24px;align-items:baseline;
+    padding:20px 6px;border-bottom:1px solid var(--line);font-size:.96rem;font-weight:700;color:var(--navy);
+  }
+  .points .pt .no{font-family:"Oswald",sans-serif;font-weight:500;font-size:.95rem;color:var(--red);letter-spacing:.12em}
 
   /* FORM */
-  .formsec{background:var(--bg-soft)}
-  .formcard{max-width:880px;margin:30px auto 0;background:#fff;border:1px solid var(--line);border-radius:22px;box-shadow:var(--shadow);overflow:hidden}
-  .formcard .fh{background:var(--grad-ai);color:#fff;padding:20px 26px;font-weight:800;font-size:1.05rem;font-family:"Zen Kaku Gothic New";display:flex;align-items:center;gap:10px}
-  .formcard .fb{padding:10px}
+  .formsec{background:var(--bg-soft);border-top:1px solid var(--line)}
+  .formcard{max-width:960px;margin:0 auto;background:#fff;border:1px solid var(--line)}
+  .formcard .fh{
+    border-bottom:1px solid var(--line);padding:20px 30px;font-weight:900;font-size:1.05rem;
+    font-family:"Zen Old Mincho",serif;color:var(--navy);
+  }
+  .formcard .fh small{display:block;font-family:"Oswald",sans-serif;font-weight:400;font-size:.7rem;letter-spacing:.3em;color:var(--muted);margin-bottom:4px}
+  .formcard .fb{padding:12px}
   .formcard iframe{display:block;width:100%;border:0}
-  .formnote{max-width:880px;margin:18px auto 0;font-size:.85rem;color:var(--muted);text-align:center}
+  .formnote{max-width:960px;margin:20px auto 0;font-size:.8rem;color:var(--muted);text-align:center}
 
   /* FOOTER */
-  footer{background:var(--navy);color:rgba(255,255,255,.78);padding:56px 0 28px}
-  .foot-grid{display:grid;grid-template-columns:1.4fr 1fr 1fr;gap:30px;padding-bottom:36px;border-bottom:1px solid rgba(255,255,255,.12)}
+  footer{background:#0d1734;color:rgba(255,255,255,.7);padding:70px 0 32px}
+  .foot-grid{display:grid;grid-template-columns:1.5fr 1fr 1fr;gap:40px;padding-bottom:44px;border-bottom:1px solid rgba(255,255,255,.12)}
   footer .logo b{color:#fff}
-  footer .logo span{color:rgba(255,255,255,.6)}
-  footer p.fd{font-size:.88rem;margin-top:16px;max-width:320px}
-  footer h5{color:#fff;font-weight:700;font-size:.95rem;margin-bottom:14px;font-family:"Zen Kaku Gothic New"}
-  footer ul{list-style:none;display:flex;flex-direction:column;gap:9px}
-  footer ul a{font-size:.88rem;transition:.2s}
-  footer ul a:hover{color:#fff;padding-left:3px}
-  .copy{text-align:center;font-size:.8rem;color:rgba(255,255,255,.5);padding-top:24px}
+  footer p.fd{font-size:.84rem;margin-top:20px;max-width:340px;line-height:2}
+  footer h5{color:rgba(255,255,255,.45);font-weight:500;font-size:.72rem;margin-bottom:18px;font-family:"Oswald",sans-serif;letter-spacing:.3em}
+  footer ul{list-style:none;display:flex;flex-direction:column;gap:12px}
+  footer ul a{font-size:.86rem;transition:.2s}
+  footer ul a:hover{color:#fff}
+  .copy{text-align:center;font-size:.72rem;color:rgba(255,255,255,.4);padding-top:30px;font-family:"Oswald",sans-serif;letter-spacing:.22em;font-weight:400}
 
-  .rv{opacity:0;transform:translateY(24px);transition:.7s cubic-bezier(.2,.7,.2,1)}
+  .rv{opacity:0;transform:translateY(22px);transition:opacity .9s cubic-bezier(.25,.6,.25,1),transform .9s cubic-bezier(.25,.6,.25,1)}
   .rv.in{opacity:1;transform:none}
+  .sec-en,.en-bg{will-change:transform}
+  .points .pt{transition:background .3s,padding-left .3s}
+  .points .pt:hover{background:#fff;padding-left:16px}
 
   @media(max-width:980px){
-    .foot-grid{grid-template-columns:1fr 1fr;gap:26px}
+    .foot-grid{grid-template-columns:1fr 1fr;gap:30px}
   }
   @media(max-width:720px){
-    .nav-links{position:fixed;inset:72px 0 auto 0;background:#fff;flex-direction:column;padding:20px 24px;gap:14px;border-bottom:1px solid var(--line);box-shadow:var(--shadow);transform:translateY(-130%);transition:.35s;align-items:stretch}
+    .nav-links{position:fixed;inset:78px 0 auto 0;background:#fff;flex-direction:column;padding:24px 28px;gap:18px;border-bottom:1px solid var(--line);transform:translateY(-140%);transition:.35s;align-items:stretch}
     .nav-links.open{transform:none}
-    .nav-links a.lnk,.nav-links a.back{padding:8px 0}
-    .nav-cta{text-align:center}
-    .burger{display:flex}
-    .logo .logo-img{height:34px}
-    .logo b{font-size:1.12rem}
-    section.block{padding:54px 0}
-    .hero{padding:48px 0 56px;background:linear-gradient(175deg,rgba(16,26,60,.9) 0%,rgba(24,38,88,.86) 55%,rgba(30,80,160,.7) 100%),url('hero-bg.png');background-size:cover;background-position:center}
-    .foot-grid{grid-template-columns:1fr;gap:30px}
+    .nav-cta{justify-content:center}
+    .burger{display:flex;margin-left:auto}
+    .nav .badges{display:none}
+    .logo .logo-img{height:32px}
+    .logo b{font-size:1.05rem}
+    section.blk{padding:70px 0}
+    .hero .wrap{padding-top:60px;padding-bottom:64px}
+    .points .pt{grid-template-columns:52px 1fr}
+    .btn{min-width:0;width:100%}
+    .foot-grid{grid-template-columns:1fr;gap:34px}
   }
 </style>
 </head>
@@ -142,11 +159,15 @@
       <img src="fce-logo.png" alt="FCE" class="logo-img">
       <span><b>FCEのAI研修</b></span>
     </a>
+    <div class="badges">
+      <img src="logo-jpx.png" alt="JPX 東証上場">
+      <img src="logo-bw.png" alt="Best Workplaces Japan 2026（Great Place To Work）">
+    </div>
     <nav class="nav-links" id="navlinks">
       <a class="lnk" href="index.html#concept">育成の考え方</a>
-      <a class="lnk" href="index.html#lineup">研修一覧</a>
+      <a class="lnk" href="index.html#programs">研修一覧</a>
       <a class="lnk" href="elearning.html">eラーニング</a>
-      <a class="btn btn-primary nav-cta" href="#form">フォームへ →</a>
+      <a class="btn btn-primary nav-cta" href="#form">フォームへ</a>
     </nav>
     <button class="burger" id="burger" aria-label="メニュー"><span></span><span></span><span></span></button>
   </div>
@@ -163,26 +184,29 @@
 
 <!-- HERO -->
 <section class="hero">
+  <span class="en-bg">CONTACT</span>
   <div class="wrap">
+    <p class="hero-kicker">CONTACT ── DOCUMENT REQUEST</p>
     <h1>資料請求・お問い合わせ</h1>
     <p class="lead">迷ったら、まずはお気軽にご相談ください。資料請求のみでも歓迎です。目的・対象人数に合わせて、最適な研修プランをご提案します。</p>
   </div>
 </section>
 
 <!-- FORM -->
-<section class="block formsec" id="form">
+<section class="blk formsec" id="form">
   <div class="wrap">
-    <div class="sec-head rv">
-      <h2>お問い合わせフォーム</h2>
-      <p>下記フォームに必要事項をご入力ください。担当者より折り返しご連絡いたします。資料請求のみのご利用も歓迎です。</p>
+    <div class="rv">
+      <span class="sec-en">FORM</span>
+      <h2 class="sec-ttl">お問い合わせフォーム</h2>
+      <p class="sec-lead">下記フォームに必要事項をご入力ください。担当者より折り返しご連絡いたします。初回のお打ち合わせは、Web面談・対面のどちらでも対応可能です。</p>
     </div>
-    <div class="points rv">
-      <span class="pt"><svg width="16" height="16" viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="3" stroke-linecap="round" stroke-linejoin="round"><polyline points="20 6 9 17 4 12"/></svg>資料請求のみでもOK</span>
-      <span class="pt"><svg width="16" height="16" viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="3" stroke-linecap="round" stroke-linejoin="round"><polyline points="20 6 9 17 4 12"/></svg>助成金のご相談も可能</span>
-      <span class="pt"><svg width="16" height="16" viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="3" stroke-linecap="round" stroke-linejoin="round"><polyline points="20 6 9 17 4 12"/></svg>最適なプランをご提案</span>
+    <div class="points">
+      <div class="pt rv"><span class="no">01</span>資料請求のみでもOK</div>
+      <div class="pt rv"><span class="no">02</span>助成金（最大75%）のご相談も可能</div>
+      <div class="pt rv"><span class="no">03</span>個別相談会・無料のAI基礎勉強会もご案内</div>
     </div>
     <div class="formcard rv">
-      <div class="fh"><svg width="20" height="20" viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="2" stroke-linecap="round" stroke-linejoin="round"><path d="M4 4h16v16H4z"/><path d="m4 7 8 6 8-6"/></svg>株式会社FCE AI研修 お問い合わせフォーム</div>
+      <div class="fh"><small>CONTACT FORM</small>株式会社FCE AI研修 お問い合わせフォーム</div>
       <div class="fb">
         <iframe frameborder="0" scrolling="auto" src="https://e9c1fb19.form.kintoneapp.com/public/92807a23a2091707e8c78dee60e779419ca90b4a9715c698996f54d92aa0ca94?iframe=true" title="株式会社FCE AI研修 お問い合わせフォーム" width="100%" height="1024px"></iframe>
       </div>
@@ -203,7 +227,7 @@
         <p class="fd">AIを"使える"だけで終わらせない。業務に組み込み、広げられる人材を育てる実践型AI研修プログラム。</p>
       </div>
       <div>
-        <h5>研修プログラム</h5>
+        <h5>PROGRAMS</h5>
         <ul>
           <li><a href="index.html#d01">01 AIスキル研修</a></li>
           <li><a href="index.html#d02">02 伴走型研修</a></li>
@@ -212,7 +236,7 @@
         </ul>
       </div>
       <div>
-        <h5>メニュー</h5>
+        <h5>MENU</h5>
         <ul>
           <li><a href="index.html#concept">育成の考え方</a></li>
           <li><a href="index.html#flow">導入の流れ</a></li>
@@ -220,7 +244,7 @@
         </ul>
       </div>
     </div>
-    <div class="copy">© FCE, Inc. All rights reserved.</div>
+    <div class="copy">© FCE, Inc. ALL RIGHTS RESERVED.</div>
   </div>
 </footer>
 
@@ -229,8 +253,28 @@
   const navlinks=document.getElementById('navlinks');
   burger.addEventListener('click',()=>navlinks.classList.toggle('open'));
   navlinks.querySelectorAll('a').forEach(a=>a.addEventListener('click',()=>navlinks.classList.remove('open')));
-  const io=new IntersectionObserver((es)=>{es.forEach(e=>{if(e.isIntersecting){e.target.classList.add('in');io.unobserve(e.target)}})},{threshold:.12});
+  const io=new IntersectionObserver((es)=>{
+    let d=0;
+    es.forEach(e=>{
+      if(e.isIntersecting){
+        e.target.style.transitionDelay=(d*110)+'ms';d++;
+        e.target.classList.add('in');io.unobserve(e.target);
+      }
+    });
+  },{threshold:.1});
   document.querySelectorAll('.rv').forEach(el=>io.observe(el));
+  const pll=[...document.querySelectorAll('.sec-en,.en-bg')];
+  let ticking=false;
+  function parallax(){
+    const vh=window.innerHeight;
+    pll.forEach(el=>{
+      const r=el.getBoundingClientRect();
+      if(r.top<vh&&r.bottom>0){el.style.transform=`translateY(${(r.top-vh*.5)*.08}px)`}
+    });
+    ticking=false;
+  }
+  window.addEventListener('scroll',()=>{if(!ticking){requestAnimationFrame(parallax);ticking=true}},{passive:true});
+  parallax();
 </script>
 </body>
 </html>
