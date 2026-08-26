@@ -2,4 +2,4 @@ User-agent: *
 Allow: /
 Disallow: /.claude/
 
-Sitemap: https://aitraining.fce-aiomniagent.com/sitemap.xml
+Sitemap: https://aitraining.fce-aiservice.com/sitemap.xml
