@@ -1,18 +1,68 @@
-<svg xmlns="http://www.w3.org/2000/svg" viewBox="0 0 640 400" role="img" aria-label="Person working at a laptop beside paperwork, a clock, and a rising arrow">
-  <g fill="none" stroke="#c9d3e6" stroke-width="7" stroke-linecap="round" stroke-linejoin="round">
-    <path d="M465 275V205h32v-42h32v-43" opacity=".75"/>
-    <path d="m516 133 13-13 13 13" opacity=".75"/>
+<svg xmlns="http://www.w3.org/2000/svg" viewBox="0 0 640 400" role="img" aria-label="ノートパソコンで生産性向上に取り組むビジネスパーソン">
+  <!-- pale productivity arrow -->
+  <path d="M80 178C151 155 206 126 263 84c42-31 82-43 127-49" fill="none" stroke="#c9d3e6" stroke-width="18" stroke-linecap="round" stroke-linejoin="round" opacity=".45"/>
+  <path d="M351 20l67 10-35 58-5-35-32 5 5-38z" fill="#c9d3e6" opacity=".45"/>
+
+  <!-- clock -->
+  <circle cx="508" cy="77" r="51" fill="#eef2f9"/>
+  <circle cx="508" cy="77" r="39" fill="#ffffff" stroke="#8fa2c2" stroke-width="5"/>
+  <circle cx="508" cy="77" r="5" fill="#1f7fc4"/>
+  <path d="M508 77V50m0 27 22 13" fill="none" stroke="#1f7fc4" stroke-width="6" stroke-linecap="round"/>
+  <g fill="#8fa2c2">
+    <circle cx="508" cy="45" r="3"/><circle cx="540" cy="77" r="3"/><circle cx="508" cy="109" r="3"/><circle cx="476" cy="77" r="3"/>
   </g>
-  <g fill="none" stroke="#15224b" stroke-width="7" stroke-linecap="round" stroke-linejoin="round">
-    <circle cx="330" cy="136" r="39"/>
-    <path d="M270 249c6-50 27-75 60-75s54 25 60 75"/>
-    <path d="M278 203c-16 12-27 28-34 50M382 203c16 12 27 28 34 50"/>
-    <path d="M250 247h160l-16 68H266z"/>
-    <path d="M236 315h188"/>
-    <circle cx="330" cy="280" r="5" fill="#1f7fc4" stroke="#1f7fc4"/>
-    <path d="M111 293h96v22h-96zM121 261h96v32h-96zM108 231h96v30h-96z"/>
-    <path d="M126 245h31M139 276h39M126 305h34" stroke="#1f7fc4"/>
-    <circle cx="488" cy="105" r="42"/>
-    <path d="M488 79v28l18 12"/>
+
+  <!-- ground shadow -->
+  <ellipse cx="330" cy="365" rx="238" ry="18" fill="#eef2f9"/>
+
+  <!-- desk and document stack -->
+  <rect x="61" y="268" width="518" height="18" rx="8" fill="#15224b"/>
+  <path d="M91 282h18l-8 78H83l8-78zm442 0h18l8 78h-18l-8-78z" fill="#1b2d5f"/>
+  <g>
+    <rect x="458" y="245" width="104" height="22" rx="5" fill="#c9d3e6"/>
+    <rect x="468" y="219" width="94" height="25" rx="5" fill="#eef2f9"/>
+    <rect x="448" y="191" width="114" height="27" rx="5" fill="#dbe8f4"/>
+    <path d="M468 200h58m-48 9h70m-69 19h55m-65 8h40m-38 18h65" fill="none" stroke="#8fa2c2" stroke-width="4" stroke-linecap="round" opacity=".75"/>
+    <path d="M538 191l24 22v-22h-24z" fill="#c9d3e6"/>
   </g>
+
+  <!-- chair -->
+  <rect x="202" y="240" width="30" height="99" rx="14" fill="#8fa2c2"/>
+  <path d="M217 330v27m-31 7h62m-31-7-25 7m25-7 25 7" fill="none" stroke="#8fa2c2" stroke-width="8" stroke-linecap="round"/>
+
+  <!-- seated person's legs -->
+  <path d="M271 281h43l25 69h-32l-36-69z" fill="#15224b"/>
+  <path d="M312 281h43l25 69h-34l-34-69z" fill="#1b2d5f"/>
+  <path d="M301 344h38v17c-9 5-25 6-46 3-6-1-7-8-2-11l10-9z" fill="#2a2a45"/>
+  <path d="M344 344h38l13 10c5 4 3 11-3 12-23 2-39 0-48-5v-17z" fill="#2a2a45"/>
+
+  <!-- torso -->
+  <path d="M247 179c15-17 35-25 58-25 27 0 49 11 62 31l-10 105h-99l-25-83 14-28z" fill="#1f7fc4"/>
+  <path d="M290 160h29v28c-7 8-22 8-29 0v-28z" fill="#f5c9a4"/>
+  <path d="M279 166l26 41 27-41 8 111h-71l10-111z" fill="#f7f9fc"/>
+  <path d="M297 183h15l7 14-14 39-14-39 6-14z" fill="#e02a23"/>
+
+  <!-- arms and hands at keyboard -->
+  <path d="M251 184c-18 16-29 37-32 64l24 7c7-20 19-35 36-46l-28-25z" fill="#1f7fc4"/>
+  <path d="M354 183c17 15 27 36 28 62l-23 7c-6-19-17-33-33-43l28-26z" fill="#1f7fc4"/>
+  <path d="M230 240c10-4 24 1 41 14l-9 17c-19-7-31-10-38-8-7 2-11-4-8-10 3-6 7-10 14-13z" fill="#f5c9a4"/>
+  <path d="M369 239c-10-4-24 1-40 15l10 17c18-8 30-11 37-9 7 1 11-5 8-11-3-6-8-10-15-12z" fill="#f5c9a4"/>
+
+  <!-- head -->
+  <ellipse cx="304" cy="112" rx="46" ry="52" fill="#f5c9a4"/>
+  <path d="M260 113c-7-31 10-59 42-62 27-3 50 13 53 40 2 14-2 27-9 37l-7-24-10-22c-15 12-35 17-62 15l-7 16z" fill="#2a2a45"/>
+  <path d="M264 104c-10-4-16 4-12 16 3 10 9 15 17 13l-5-29zm82-2c10-3 16 5 12 17-3 9-9 14-17 12l5-29z" fill="#f5c9a4"/>
+
+  <!-- worried face -->
+  <circle cx="287" cy="114" r="3.3" fill="#2a2a45"/>
+  <circle cx="321" cy="114" r="3.3" fill="#2a2a45"/>
+  <path d="M277 103c7-5 14-4 21 1m14 0c7-5 14-6 21-1" fill="none" stroke="#5b4a3f" stroke-width="3.7" stroke-linecap="round"/>
+  <path d="M303 119l-4 11h8" fill="none" stroke="#d59678" stroke-width="2.7" stroke-linecap="round" stroke-linejoin="round"/>
+  <path d="M291 144c8-9 19-9 27 0" fill="none" stroke="#8e4f4c" stroke-width="4" stroke-linecap="round"/>
+
+  <!-- laptop -->
+  <path d="M176 194h119c7 0 12 5 13 12l8 58H185l-17-60c-2-5 2-10 8-10z" fill="#15224b"/>
+  <path d="M186 204h101l7 50h-94l-14-50z" fill="#dbe8f4"/>
+  <circle cx="241" cy="229" r="9" fill="#1f7fc4"/>
+  <path d="M168 264h160c6 0 9 7 5 11-3 4-8 6-14 6H180c-7 0-12-4-12-10v-7z" fill="#2a2a45"/>
 </svg>

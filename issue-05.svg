@@ -1,35 +1,117 @@
-<svg xmlns="http://www.w3.org/2000/svg" viewBox="0 0 640 400" role="img" aria-label="An instructor teaches an AI diagram, leading to a self-running team">
-  <g fill="none" stroke-linecap="round" stroke-linejoin="round">
-    <g stroke="#15224b" stroke-width="7">
-      <rect x="102" y="69" width="214" height="145" rx="9"/>
-      <path d="M209 214v26M169 240h80"/>
-      <circle cx="172" cy="278" r="25"/>
-      <path d="M135 341c3-31 16-47 37-47s34 16 37 47"/>
-      <circle cx="245" cy="278" r="25"/>
-      <path d="M208 341c3-31 16-47 37-47s34 16 37 47"/>
-      <circle cx="347" cy="170" r="29"/>
-      <path d="M304 275c4-38 18-58 43-58s39 20 43 58M321 231l-29 40M372 230l23 37"/>
-      <path d="M322 217 286 170"/>
-    </g>
-    <g stroke="#1f7fc4" stroke-width="6">
-      <circle cx="208" cy="140" r="20"/>
-      <path d="M208 120V95M208 160v27M188 140h-28M228 140h28M194 126l-18-18M222 126l18-18M194 154l-18 18M222 154l18 18"/>
-      <circle cx="160" cy="95" r="7"/>
-      <circle cx="256" cy="95" r="7"/>
-      <circle cx="160" cy="187" r="7"/>
-      <circle cx="256" cy="187" r="7"/>
-    </g>
-    <g stroke="#c9d3e6" stroke-width="7">
-      <path d="M400 237h36" stroke-dasharray="4 14"/>
-      <path d="m421 223 15 14-15 14"/>
-    </g>
-    <g stroke="#1f7fc4" stroke-width="7">
-      <circle cx="466" cy="266" r="24"/>
-      <path d="M431 329c3-31 15-47 35-47s32 16 35 47"/>
-      <circle cx="525" cy="266" r="24"/>
-      <path d="M490 329c3-31 15-47 35-47s32 16 35 47"/>
-      <path d="M456 307c22 14 58 14 79 0"/>
-      <path d="M496 196v-21M479 203l-15-15M513 203l15-15M496 217v1"/>
-    </g>
+<svg xmlns="http://www.w3.org/2000/svg" viewBox="0 0 640 400" role="img" aria-labelledby="title desc">
+  <title id="title">AI研修を内製化して自走するチーム</title>
+  <desc id="desc">ホワイトボードの前で教える女性講師と二人の受講者、右側へ自走する小さなチームを描いたフラットイラスト</desc>
+
+  <!-- whiteboard -->
+  <rect x="38" y="50" width="280" height="190" rx="14" fill="#eef2f9"/>
+  <rect x="50" y="62" width="256" height="160" rx="9" fill="#ffffff"/>
+  <rect x="62" y="78" width="94" height="13" rx="6.5" fill="#c9d3e6"/>
+  <rect x="62" y="101" width="61" height="9" rx="4.5" fill="#dce3ee"/>
+  <rect x="62" y="118" width="81" height="9" rx="4.5" fill="#dce3ee"/>
+  <rect x="70" y="155" width="32" height="45" rx="5" fill="#c9d3e6"/>
+  <rect x="112" y="137" width="32" height="63" rx="5" fill="#1f7fc4"/>
+  <rect x="154" y="112" width="32" height="88" rx="5" fill="#15224b"/>
+  <path d="M218 167l18-20 18 8 27-35" fill="none" stroke="#e02a23" stroke-width="7" stroke-linecap="round" stroke-linejoin="round"/>
+  <circle cx="218" cy="167" r="6" fill="#e02a23"/>
+  <circle cx="236" cy="147" r="6" fill="#e02a23"/>
+  <circle cx="254" cy="155" r="6" fill="#e02a23"/>
+  <circle cx="281" cy="120" r="6" fill="#e02a23"/>
+  <path d="M67 240v48h13v-48zm222 0v48h13v-48z" fill="#8fa2c2"/>
+
+  <!-- ground shadows -->
+  <ellipse cx="198" cy="365" rx="176" ry="18" fill="#eef2f9"/>
+  <ellipse cx="528" cy="344" rx="86" ry="13" fill="#eef2f9"/>
+
+  <!-- female trainer: legs -->
+  <path d="M317 271h31l-7 86h-29z" fill="#15224b"/>
+  <path d="M351 271h29l10 86h-29z" fill="#1b2d5f"/>
+  <path d="M310 349h33v15c-9 5-25 6-43 3-5-1-6-7-2-10l12-8z" fill="#2a2a45"/>
+  <path d="M360 349h31l13 9c5 4 3 10-2 11-21 2-35 1-42-5v-15z" fill="#2a2a45"/>
+
+  <!-- trainer torso -->
+  <path d="M302 178c13-16 30-24 50-24 25 0 43 11 55 30l-19 99h-84l-18-81 16-24z" fill="#1f7fc4"/>
+  <path d="M339 159h26v26c-6 8-20 8-26 0v-26z" fill="#f5c9a4"/>
+  <path d="M327 165l25 35 25-35 11 106h-72l11-106z" fill="#f7f9fc" opacity=".95"/>
+  <path d="M301 181c-19 12-34 28-44 48l18 12c13-14 28-25 45-31l-19-29z" fill="#1f7fc4"/>
+  <path d="M257 226c-7 4-10 11-6 18 4 7 12 9 19 4l10-8-13-19-10 5z" fill="#f5c9a4"/>
+
+  <!-- pointer -->
+  <path d="M263 228L164 139" fill="none" stroke="#5b4a3f" stroke-width="5" stroke-linecap="round"/>
+  <circle cx="164" cy="139" r="6" fill="#e02a23"/>
+
+  <!-- trainer raised arm -->
+  <path d="M396 178c19 12 29 29 31 50l-22 7c-5-15-13-27-26-35l17-22z" fill="#1f7fc4"/>
+  <path d="M405 228c1-9 7-14 15-14 8 1 13 7 12 15l-2 12c-1 7-9 10-15 6l-10-7v-12z" fill="#f5c9a4"/>
+  <path d="M427 222c8-7 14-8 18-4 4 5 1 11-6 18l-10 9-9-12 7-11z" fill="#f5c9a4"/>
+
+  <!-- trainer head and hair -->
+  <ellipse cx="351" cy="112" rx="44" ry="51" fill="#f5c9a4"/>
+  <path d="M310 119c-10-30-1-58 24-70 29-14 61 3 66 34 4 26-6 52-18 71l-15-4 7-55c-16 2-31-5-44-19-3 18-9 33-20 43z" fill="#5b4a3f"/>
+  <path d="M385 102c9-3 15 4 12 15-3 10-9 15-16 13l4-28z" fill="#f5c9a4"/>
+  <circle cx="337" cy="113" r="3.3" fill="#2a2a45"/>
+  <circle cx="368" cy="113" r="3.3" fill="#2a2a45"/>
+  <path d="M327 103c6-4 13-4 19 0m14 0c6-4 12-4 18 0" fill="none" stroke="#5b4a3f" stroke-width="3.5" stroke-linecap="round"/>
+  <path d="M350 118l-3 10h7" fill="none" stroke="#d59678" stroke-width="2.5" stroke-linecap="round"/>
+  <path d="M338 138c9 9 20 9 29 0" fill="none" stroke="#8e4f4c" stroke-width="4" stroke-linecap="round"/>
+
+  <!-- seated attendee 1 -->
+  <path d="M55 293c10-24 29-37 54-37 25 0 44 13 54 37l-8 55H66l-11-55z" fill="#15224b"/>
+  <path d="M69 348h83l26 16H52c-7 0-10-9-4-13l21-3z" fill="#1b2d5f"/>
+  <path d="M89 244h26v21c-6 7-20 7-26 0v-21z" fill="#f5c9a4"/>
+  <ellipse cx="102" cy="218" rx="38" ry="43" fill="#f5c9a4"/>
+  <path d="M67 217c-4-28 11-48 36-48 23 0 39 15 40 39 1 9-2 18-7 27l-8-23c-18 3-35-3-50-17l-11 22z" fill="#2a2a45"/>
+  <circle cx="88" cy="220" r="3" fill="#2a2a45"/>
+  <circle cx="115" cy="220" r="3" fill="#2a2a45"/>
+  <path d="M81 211c5-3 10-3 15 0m12 0c5-3 10-3 15 0" fill="none" stroke="#5b4a3f" stroke-width="3" stroke-linecap="round"/>
+  <path d="M90 239c8 8 17 8 24 0" fill="none" stroke="#8e4f4c" stroke-width="3.5" stroke-linecap="round"/>
+  <path d="M132 285l51 28-10 19-54-18 13-29z" fill="#15224b"/>
+  <circle cx="177" cy="320" r="10" fill="#f5c9a4"/>
+
+  <!-- seated attendee 2 -->
+  <path d="M154 297c11-25 30-37 55-37 24 0 43 12 52 37l-8 52h-88l-11-52z" fill="#c9d3e6"/>
+  <path d="M167 349h84l24 15H151c-7 0-9-8-4-12l20-3z" fill="#8fa2c2"/>
+  <path d="M191 247h26v21c-6 7-20 7-26 0v-21z" fill="#f5c9a4"/>
+  <ellipse cx="204" cy="222" rx="38" ry="43" fill="#f5c9a4"/>
+  <path d="M166 224c-5-28 10-50 38-50 25 0 41 16 40 43l-8 15-7-27c-17 7-36 7-55-2l-8 21z" fill="#5b4a3f"/>
+  <circle cx="190" cy="224" r="3" fill="#2a2a45"/>
+  <circle cx="218" cy="224" r="3" fill="#2a2a45"/>
+  <path d="M181 215c5-3 10-3 15 0m13 0c5-3 10-3 15 0" fill="none" stroke="#5b4a3f" stroke-width="3" stroke-linecap="round"/>
+  <path d="M192 243c8 8 17 8 24 0" fill="none" stroke="#8e4f4c" stroke-width="3.5" stroke-linecap="round"/>
+  <path d="M170 289l-34 29 14 18 42-20-2-27z" fill="#c9d3e6"/>
+  <circle cx="143" cy="326" r="10" fill="#f5c9a4"/>
+
+  <!-- dotted transition arrow -->
+  <path d="M405 291c23-35 48-52 81-54" fill="none" stroke="#1f7fc4" stroke-width="4" stroke-linecap="round" stroke-dasharray="4 10"/>
+  <path d="M478 225l23 11-20 17z" fill="#1f7fc4"/>
+
+  <!-- autonomous mini team -->
+  <g>
+    <path d="M486 301c5-15 16-23 31-23 16 0 27 8 32 23l-5 40h-53l-5-40z" fill="#1f7fc4"/>
+    <ellipse cx="517" cy="258" rx="22" ry="25" fill="#f5c9a4"/>
+    <path d="M496 259c-2-17 7-29 22-29 14 0 23 9 23 24l-5 11-5-16c-10 3-20 2-30-5l-5 15z" fill="#2a2a45"/>
+    <circle cx="509" cy="260" r="2.2" fill="#2a2a45"/>
+    <circle cx="525" cy="260" r="2.2" fill="#2a2a45"/>
+    <path d="M510 272c5 5 10 5 15 0" fill="none" stroke="#8e4f4c" stroke-width="2.7" stroke-linecap="round"/>
+
+    <path d="M544 307c4-13 14-20 27-20s23 7 28 20l-4 34h-47l-4-34z" fill="#15224b"/>
+    <ellipse cx="571" cy="270" rx="20" ry="23" fill="#f5c9a4"/>
+    <path d="M552 270c-2-15 6-26 20-26 13 0 22 9 21 23l-4 9-5-14c-10 2-18 0-27-6l-5 14z" fill="#5b4a3f"/>
+    <circle cx="564" cy="271" r="2" fill="#2a2a45"/>
+    <circle cx="578" cy="271" r="2" fill="#2a2a45"/>
+    <path d="M565 282c4 4 9 4 13 0" fill="none" stroke="#8e4f4c" stroke-width="2.5" stroke-linecap="round"/>
+
+    <path d="M445 310c4-12 13-19 26-19 12 0 22 7 26 19l-4 31h-44l-4-31z" fill="#c9d3e6"/>
+    <ellipse cx="471" cy="275" rx="19" ry="22" fill="#f5c9a4"/>
+    <path d="M452 276c-2-15 6-25 20-25 13 0 21 8 21 22l-4 9-5-14c-9 3-18 1-27-5l-5 13z" fill="#2a2a45"/>
+    <circle cx="464" cy="276" r="2" fill="#2a2a45"/>
+    <circle cx="478" cy="276" r="2" fill="#2a2a45"/>
+    <path d="M465 287c4 4 9 4 13 0" fill="none" stroke="#8e4f4c" stroke-width="2.5" stroke-linecap="round"/>
   </g>
+
+  <!-- sparkles -->
+  <g fill="#e02a23">
+    <path d="M570 208l5 12 12 5-12 5-5 12-5-12-12-5 12-5 5-12z"/>
+    <path d="M611 251l3 8 8 3-8 3-3 8-3-8-8-3 8-3 3-8z"/>
+  </g>
+  <path d="M443 211l4 10 10 4-10 4-4 10-4-10-10-4 10-4 4-10z" fill="#1f7fc4"/>
 </svg>

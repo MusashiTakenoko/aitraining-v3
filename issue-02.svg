@@ -1,26 +1,80 @@
-<svg xmlns="http://www.w3.org/2000/svg" viewBox="0 0 640 400" role="img" aria-label="One person using AI at a computer while connected to surrounding coworkers">
-  <g fill="none" stroke="#c9d3e6" stroke-width="7" stroke-linecap="round" stroke-linejoin="round">
-    <circle cx="135" cy="168" r="27"/>
-    <path d="M92 247c4-34 18-52 43-52s39 18 43 52M111 211l-20 30M159 211l20 30"/>
-    <circle cx="505" cy="168" r="27"/>
-    <path d="M462 247c4-34 18-52 43-52s39 18 43 52M481 211l-20 30M529 211l20 30"/>
-    <circle cx="112" cy="285" r="22"/>
-    <path d="M78 341c3-27 14-41 34-41s31 14 34 41"/>
-    <circle cx="528" cy="285" r="22"/>
-    <path d="M494 341c3-27 14-41 34-41s31 14 34 41"/>
-    <path d="M179 219C218 200 235 188 257 177M461 219c-39-19-56-31-78-42M147 290c44 4 69-3 93-18M493 290c-44 4-69-3-93-18" stroke-dasharray="4 15"/>
+<svg xmlns="http://www.w3.org/2000/svg" viewBox="0 0 640 400" role="img" aria-label="一部の社員だけがAIを活用している様子">
+  <!-- dotted connections -->
+  <g fill="none" stroke="#8cbce0" stroke-width="4" stroke-linecap="round" stroke-dasharray="5 10" opacity=".85">
+    <path d="M248 201C205 171 169 157 128 157"/>
+    <path d="M392 201c43-30 79-44 120-44"/>
+    <path d="M238 260c-51 11-87 30-117 60"/>
+    <path d="M402 260c51 11 87 30 117 60"/>
   </g>
-  <g fill="none" stroke="#1f7fc4" stroke-width="7" stroke-linecap="round" stroke-linejoin="round">
-    <circle cx="320" cy="159" r="37"/>
-    <path d="M260 265c5-48 25-70 60-70s55 22 60 70"/>
-    <path d="M269 224c-14 12-23 27-28 45M371 224c14 12 23 27 28 45"/>
-    <path d="M245 259h150l-15 63H260zM232 322h176"/>
-    <circle cx="320" cy="289" r="5" fill="#1f7fc4"/>
-    <path d="M320 103V76M294 110l-16-23M346 110l16-23M284 127l-26-8M356 127l26-8"/>
-    <circle cx="320" cy="68" r="8"/>
-    <circle cx="273" cy="82" r="8"/>
-    <circle cx="367" cy="82" r="8"/>
-    <circle cx="250" cy="116" r="8"/>
-    <circle cx="390" cy="116" r="8"/>
+
+  <!-- pale employee groups -->
+  <g opacity=".72">
+    <ellipse cx="108" cy="337" rx="85" ry="12" fill="#eef2f9"/>
+    <path d="M50 202c7-20 22-30 42-30s35 10 43 30l-7 56H57l-7-56z" fill="#dbe8f4"/>
+    <ellipse cx="92" cy="140" rx="31" ry="36" fill="#dbe8f4"/>
+    <path d="M62 142c-3-23 9-39 31-39 20 0 33 13 32 35l-6 13-6-21c-15 5-30 3-44-7l-7 19z" fill="#afcde5"/>
+    <circle cx="82" cy="142" r="2.7" fill="#8fa2c2"/><circle cx="103" cy="142" r="2.7" fill="#8fa2c2"/>
+    <path d="M83 161h19" fill="none" stroke="#8fa2c2" stroke-width="3" stroke-linecap="round"/>
+
+    <path d="M121 230c6-18 20-27 38-27s31 9 38 27l-6 49h-64l-6-49z" fill="#c9d3e6"/>
+    <ellipse cx="159" cy="176" rx="28" ry="32" fill="#dbe8f4"/>
+    <path d="M132 177c-3-20 8-35 28-35 18 0 30 12 30 32l-6 11-5-18c-14 4-27 2-40-6l-7 16z" fill="#8cbce0"/>
+    <circle cx="150" cy="177" r="2.5" fill="#8fa2c2"/><circle cx="169" cy="177" r="2.5" fill="#8fa2c2"/>
+    <path d="M151 194h17" fill="none" stroke="#8fa2c2" stroke-width="3" stroke-linecap="round"/>
+  </g>
+
+  <g opacity=".72">
+    <ellipse cx="532" cy="337" rx="85" ry="12" fill="#eef2f9"/>
+    <path d="M505 202c7-20 22-30 42-30s35 10 43 30l-7 56h-71l-7-56z" fill="#dbe8f4"/>
+    <ellipse cx="547" cy="140" rx="31" ry="36" fill="#dbe8f4"/>
+    <path d="M517 142c-3-23 9-39 31-39 20 0 33 13 32 35l-6 13-6-21c-15 5-30 3-44-7l-7 19z" fill="#afcde5"/>
+    <circle cx="537" cy="142" r="2.7" fill="#8fa2c2"/><circle cx="558" cy="142" r="2.7" fill="#8fa2c2"/>
+    <path d="M538 161h19" fill="none" stroke="#8fa2c2" stroke-width="3" stroke-linecap="round"/>
+
+    <path d="M443 230c6-18 20-27 38-27s31 9 38 27l-6 49h-64l-6-49z" fill="#c9d3e6"/>
+    <ellipse cx="481" cy="176" rx="28" ry="32" fill="#dbe8f4"/>
+    <path d="M454 177c-3-20 8-35 28-35 18 0 30 12 30 32l-6 11-5-18c-14 4-27 2-40-6l-7 16z" fill="#8cbce0"/>
+    <circle cx="472" cy="177" r="2.5" fill="#8fa2c2"/><circle cx="491" cy="177" r="2.5" fill="#8fa2c2"/>
+    <path d="M473 194h17" fill="none" stroke="#8fa2c2" stroke-width="3" stroke-linecap="round"/>
+  </g>
+
+  <!-- central ground shadow -->
+  <ellipse cx="320" cy="365" rx="117" ry="16" fill="#eef2f9"/>
+
+  <!-- central person's legs -->
+  <path d="M275 282h43l-5 72h-37l-1-72z" fill="#15224b"/>
+  <path d="M322 282h42l1 72h-38l-5-72z" fill="#1b2d5f"/>
+  <path d="M274 347h41v16c-9 5-25 6-48 3-6-1-7-8-2-11l9-8z" fill="#2a2a45"/>
+  <path d="M327 347h39l13 9c5 4 3 11-3 12-24 2-40 0-49-5v-16z" fill="#2a2a45"/>
+
+  <!-- central torso -->
+  <path d="M259 183c15-17 35-25 60-25 27 0 49 10 63 31l-17 103H269l-25-80 15-29z" fill="#1f7fc4"/>
+  <path d="M305 163h29v27c-7 8-22 8-29 0v-27z" fill="#f5c9a4"/>
+  <path d="M292 171l27 40 28-40 8 108h-75l12-108z" fill="#f7f9fc"/>
+  <path d="M311 187h15l7 14-14 38-14-38 6-14z" fill="#e02a23"/>
+  <path d="M262 188c-17 14-28 34-32 59l24 9c7-20 19-35 37-45l-29-23z" fill="#1f7fc4"/>
+  <path d="M377 190c17 14 27 33 30 58l-24 8c-6-19-18-34-35-44l29-22z" fill="#1f7fc4"/>
+
+  <!-- central smiling head -->
+  <ellipse cx="319" cy="111" rx="46" ry="52" fill="#f5c9a4"/>
+  <path d="M275 113c-7-31 10-59 42-62 27-3 50 13 53 40 2 14-2 27-9 37l-7-24-10-22c-15 12-35 17-62 15l-7 16z" fill="#2a2a45"/>
+  <path d="M279 104c-10-4-16 4-12 16 3 10 9 15 17 13l-5-29zm82-2c10-3 16 5 12 17-3 9-9 14-17 12l5-29z" fill="#f5c9a4"/>
+  <circle cx="302" cy="114" r="3.3" fill="#2a2a45"/><circle cx="336" cy="114" r="3.3" fill="#2a2a45"/>
+  <path d="M292 104c6-4 13-4 19 0m15 0c6-4 12-4 18 0" fill="none" stroke="#5b4a3f" stroke-width="3.5" stroke-linecap="round"/>
+  <path d="M318 119l-4 11h8" fill="none" stroke="#d59678" stroke-width="2.7" stroke-linecap="round" stroke-linejoin="round"/>
+  <path d="M305 139c9 9 20 9 29 0" fill="none" stroke="#8e4f4c" stroke-width="4" stroke-linecap="round"/>
+
+  <!-- laptop and hands -->
+  <path d="M258 238h124l-12 57H269l-11-57z" fill="#15224b"/>
+  <path d="M268 246h104l-9 41h-86l-9-41z" fill="#dbe8f4"/>
+  <circle cx="320" cy="266" r="8" fill="#1f7fc4"/>
+  <path d="M248 294h144c6 0 9 7 5 11-3 4-8 6-14 6H257c-6 0-11-4-11-10l2-7z" fill="#2a2a45"/>
+  <ellipse cx="268" cy="251" rx="16" ry="10" fill="#f5c9a4"/><ellipse cx="371" cy="251" rx="16" ry="10" fill="#f5c9a4"/>
+
+  <!-- AI sparkles -->
+  <g fill="#1f7fc4">
+    <path d="M318 13l8 19 19 8-19 8-8 19-8-19-19-8 19-8 8-19z"/>
+    <path d="M372 42l5 12 12 5-12 5-5 12-5-12-12-5 12-5 5-12z"/>
+    <path d="M263 49l4 10 10 4-10 4-4 10-4-10-10-4 10-4 4-10z"/>
   </g>
 </svg>

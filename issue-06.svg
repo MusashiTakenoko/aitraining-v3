@@ -1,22 +1,60 @@
-<svg xmlns="http://www.w3.org/2000/svg" viewBox="0 0 640 400" role="img" aria-label="A person examines a three-bar chart through a red-rimmed magnifying glass">
-  <g fill="none" stroke-linecap="round" stroke-linejoin="round">
-    <g stroke="#15224b" stroke-width="7">
-      <path d="M107 313h274M124 313V95"/>
-      <rect x="157" y="226" width="48" height="87" rx="5"/>
-      <rect x="238" y="166" width="48" height="147" rx="5"/>
-      <rect x="319" y="112" width="48" height="201" rx="5"/>
-      <circle cx="480" cy="159" r="34"/>
-      <path d="M429 267c4-48 21-73 51-73s47 25 51 73"/>
-      <path d="M440 222c-17 12-28 29-34 50M520 222c17 12 28 29 34 50"/>
-      <path d="M421 313h118"/>
-    </g>
-    <g stroke="#1f7fc4" stroke-width="7">
-      <path d="M174 244v51M255 184v111M336 130v165"/>
-      <path d="M145 118c52 14 104 2 148-25 26-16 51-23 78-18" stroke-dasharray="4 14" opacity=".75"/>
-    </g>
-    <g stroke="#e02a23" stroke-width="8">
-      <circle cx="330" cy="202" r="67"/>
-      <path d="m378 250 62 62"/>
-    </g>
+<svg xmlns="http://www.w3.org/2000/svg" viewBox="0 0 640 400" role="img" aria-label="虫めがねで自社のAI活用状況を調べる経営者">
+  <!-- chart panel -->
+  <rect x="42" y="55" width="292" height="231" rx="16" fill="#eef2f9"/>
+  <rect x="57" y="70" width="262" height="198" rx="10" fill="#ffffff"/>
+  <path d="M81 239H297M81 102v137" fill="none" stroke="#c9d3e6" stroke-width="5" stroke-linecap="round"/>
+  <path d="M82 197h214M82 151h214M82 105h214" fill="none" stroke="#dce3ee" stroke-width="3" stroke-dasharray="6 9"/>
+  <rect x="104" y="184" width="43" height="55" rx="6" fill="#c9d3e6"/>
+  <rect x="166" y="143" width="43" height="96" rx="6" fill="#1f7fc4"/>
+  <rect x="228" y="103" width="43" height="136" rx="6" fill="#15224b"/>
+  <path d="M108 157l64-45 45 15 65-54" fill="none" stroke="#8cbce0" stroke-width="6" stroke-linecap="round" stroke-linejoin="round"/>
+  <circle cx="108" cy="157" r="6" fill="#1f7fc4"/><circle cx="172" cy="112" r="6" fill="#1f7fc4"/><circle cx="217" cy="127" r="6" fill="#1f7fc4"/><circle cx="282" cy="73" r="6" fill="#1f7fc4"/>
+
+  <!-- ground shadow -->
+  <ellipse cx="410" cy="367" rx="181" ry="17" fill="#eef2f9"/>
+
+  <!-- legs and shoes -->
+  <path d="M385 276h43l-4 80h-38l-1-80z" fill="#15224b"/>
+  <path d="M432 276h42l3 80h-39l-6-80z" fill="#1b2d5f"/>
+  <path d="M384 348h42v16c-9 5-26 6-49 3-6-1-7-8-2-11l9-8z" fill="#2a2a45"/>
+  <path d="M439 348h40l14 9c5 4 3 11-3 12-25 2-42 0-51-5v-16z" fill="#2a2a45"/>
+
+  <!-- suit torso -->
+  <path d="M366 181c16-17 37-25 62-25 30 0 53 11 67 32l-17 98H376l-25-76 15-29z" fill="#15224b"/>
+  <path d="M413 163h31v29c-7 8-23 8-31 0v-29z" fill="#f5c9a4"/>
+  <path d="M400 171l28 106 29-106 12 107h-81l12-107z" fill="#f7f9fc"/>
+  <path d="M420 185h15l7 14-14 45-14-45 6-14z" fill="#e02a23"/>
+  <path d="M400 171l28 106-52-31-10-65c10-7 21-10 34-10zm57 0-29 106 50-31 17-58c-10-9-23-15-38-17z" fill="#1f7fc4"/>
+
+  <!-- left arm holding magnifier -->
+  <path d="M368 188c-25 13-43 32-54 57l23 13c13-17 29-29 49-36l-18-34z" fill="#15224b"/>
+  <path d="M319 239c-9 3-13 11-10 19 4 8 13 11 21 6l14-9-13-21-12 5z" fill="#f5c9a4"/>
+  <path d="M322 251l-53-42" fill="none" stroke="#e02a23" stroke-width="16" stroke-linecap="round"/>
+
+  <!-- right arm bracing the lens -->
+  <path d="M485 190c20 13 32 31 36 55l-24 9c-7-17-18-30-35-39l23-25z" fill="#15224b"/>
+  <path d="M502 242c8-3 17 1 20 9 2 8-2 16-10 19l-15 5-8-25 13-8z" fill="#f5c9a4"/>
+
+  <!-- head behind magnifier -->
+  <ellipse cx="429" cy="109" rx="48" ry="54" fill="#f5c9a4"/>
+  <path d="M383 111c-7-32 11-61 44-64 29-3 52 14 56 42 2 14-2 28-10 39l-8-25-10-23c-16 12-37 18-65 15l-7 16z" fill="#2a2a45"/>
+  <path d="M388 102c-10-4-17 4-13 17 3 10 10 16 18 14l-5-31zm85-2c10-4 17 5 13 17-3 10-10 15-18 13l5-30z" fill="#f5c9a4"/>
+
+  <!-- serious face -->
+  <circle cx="411" cy="111" r="3.5" fill="#2a2a45"/><circle cx="447" cy="111" r="3.5" fill="#2a2a45"/>
+  <path d="M400 100c8-5 16-4 23 1m14 0c7-5 15-6 23-1" fill="none" stroke="#5b4a3f" stroke-width="4" stroke-linecap="round"/>
+  <path d="M428 116l-4 12h8" fill="none" stroke="#d59678" stroke-width="3" stroke-linecap="round" stroke-linejoin="round"/>
+  <path d="M416 143c8-4 18-4 26 0" fill="none" stroke="#8e4f4c" stroke-width="4" stroke-linecap="round"/>
+
+  <!-- magnifying glass over chart and face -->
+  <circle cx="288" cy="185" r="79" fill="#ffffff" opacity=".16" stroke="#e02a23" stroke-width="16"/>
+  <circle cx="288" cy="185" r="66" fill="none" stroke="#ffffff" stroke-width="4" opacity=".75"/>
+  <path d="M238 145c19-21 44-30 69-25" fill="none" stroke="#ffffff" stroke-width="8" stroke-linecap="round" opacity=".7"/>
+  <circle cx="289" cy="185" r="5" fill="#e02a23" opacity=".8"/>
+
+  <!-- small diagnostic sparkles -->
+  <g fill="#e02a23">
+    <path d="M563 97l5 12 12 5-12 5-5 12-5-12-12-5 12-5 5-12z"/>
+    <path d="M598 153l3 8 8 3-8 3-3 8-3-8-8-3 8-3 3-8z"/>
   </g>
 </svg>
